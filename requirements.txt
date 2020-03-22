@@ -1,0 +1,5 @@
+bs4
+scrapy==1.8.0
+ipython==7.12.0
+requests
+lxml
