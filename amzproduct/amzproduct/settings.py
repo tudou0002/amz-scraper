@@ -55,6 +55,13 @@ COOKIES_ENABLED = False
 #DOWNLOADER_MIDDLEWARES = {
 #    'amzproduct.middlewares.ChangeUserAgentMiddleware': 543,
 #}
+DOWNLOADER_MIDDLEWARES = {
+    'rotating_proxies.middlewares.RotatingProxyMiddleware': 610,
+    'rotating_proxies.middlewares.BanDetectionMiddleware': 620,
+}
+
+ROTATING_PROXY_LIST = [
+    ]
 
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
@@ -65,7 +72,8 @@ COOKIES_ENABLED = False
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'amzproduct.pipelines.AmzproductPipeline': 300,
+    'amzproduct.pipelines.ReviewPipeline': 200,
+    #'amzproduct.pipelines.AmzproductPipeline': 300
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

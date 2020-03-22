@@ -33,10 +33,10 @@ class AmzproductItem(scrapy.Item):
 class ReviewItem(scrapy.Item):
     # to identify the same product
     asin = scrapy.Field()
-    review_id = scrapy.Field()
+    # review_id = scrapy.Field()
     reviewer = scrapy.Field()
-    review_url = scrapy.Field()
-    star = scrapy.Field()
+    # review_url = scrapy.Field()
+    rate = scrapy.Field()
     date = scrapy.Field()
     title = scrapy.Field()
     content = scrapy.Field()
