@@ -5,6 +5,7 @@
 
 ## Features of item
 ### Product
+![output file of productSpider](https://github.com/tudou0002/amz-scraper/blob/master/pic/product.PNG)
 - title: Title of the product. 商品全称
 - price: Price scraped from the buy box, if it's null, fill in with the lowest price among all suppliers(including used product). Buy Box中的商品价格， 若没有buy box， 则爬取所有供应商（包括二手）的最低价
 - seller: Seller of the product. 卖家名称
@@ -17,6 +18,7 @@
 - url: Link to each product's page. 每个商品页面的链接
 
 ### Review
+![output file of reviewSpider](https://github.com/tudou0002/amz-scraper/blob/master/pic/review.PNG)
 - asin: Amazon Standard Identification Number. A 10-charcter alphanumeric unique identifier that's assigned by Amazon.com and its partners. Can be used as a foreign key in the database. 亚马逊标准识别码， 每个商品拥有独特的识别码。可被用作数据库中表的外键。同一商品的评价asin一致
 - reviewer: User name of a review. 单条评论的用户名
 - rate: Rate of a product(out of 5). 单条评分（5分制）
